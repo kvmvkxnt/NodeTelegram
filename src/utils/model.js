@@ -10,6 +10,6 @@ function write(fileName, data) {
   return true;
 }
 
-export default {
+export {
   read, write
 }
