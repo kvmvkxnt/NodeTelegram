@@ -32,7 +32,7 @@ const SEND = (req, res, next) => {
     
     if (req.files) {
       let fileName = Date.now() + req.files.file.name.replace(/\s/g, '');
-      req.files.file.mv(path.join(process.cwd(), 'uploads', 'files', fileName));
+      req.files.file.mv(path.join(process.cwd(), 'src', 'uploads', 'files', fileName));
       req.body.file = {
         "viewLink": `${HOST}:${PORT}/view/${fileName}`,
         "downloadLink": `${HOST}:${PORT}/download/${fileName}`

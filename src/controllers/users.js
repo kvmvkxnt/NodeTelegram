@@ -64,13 +64,18 @@ const REGISTER = (req, res, next) => {
 
     if (req.files) {
       let fileName = Date.now() + req.files.avatar.name.replace(/\s/g, '');
-      req.files.avatar.mv(path.join(process.cwd(), 'uploads', 'avatars', fileName));
+      req.files.avatar.mv(path.join(process.cwd(), 'src', 'uploads', 'avatars', fileName));
 
       req.body.avatar = {
         "viewLink": `${HOST}:${PORT}/view/${fileName}`,
         "downloadLink": `${HOST}:${PORT}/download/${fileName}`
       };
-    };
+    } else {
+      req.body.avatar = {
+        "viewLink": `${HOST}:${PORT}/view/stock.jpg`,
+        "downloadLink": `${HOST}:${PORT}/download/stock.jpg`
+      }
+    }
 
     console.log(req.body);
 
