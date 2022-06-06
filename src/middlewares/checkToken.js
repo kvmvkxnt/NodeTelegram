@@ -1,9 +1,9 @@
 import { ForbiddenError } from '../utils/errors.js';
 import jwt from '../utils/jwt.js';
 
-export default (req, res, next) => {
+export default (req, _, next) => {
   try {
-    if (req.url == '/login' || req.url == '/register') {
+    if (req.url == '/login' || req.url == '/register' || req.url == '/test') {
       return next();
     }
 

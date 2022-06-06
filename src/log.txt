@@ -1,0 +1,18 @@
+/login ||| InternalServerError ||| 1654433501000 ||| 500 ||| ENOENT: no such file or directory, open '/Users/kvmvkxntxaea-12/Desktop/programming/telegram/db/users.json'
+/login ||| InternalServerError ||| 1654433515266 ||| 500 ||| ENOENT: no such file or directory, open '/Users/kvmvkxntxaea-12/Desktop/programming/telegram/db/users.json'
+/login ||| InternalServerError ||| 1654433779301 ||| 500 ||| ENOENT: no such file or directory, open '/Users/kvmvkxntxaea-12/Desktop/programming/telegram/db/users.json'
+/messages ||| InternalServerError ||| 1654434401013 ||| 500 ||| Unexpected token } in JSON at position 94
+/messages ||| InternalServerError ||| 1654434445465 ||| 500 ||| Unexpected token } in JSON at position 94
+/messages ||| InternalServerError ||| 1654436228055 ||| 500 ||| Unexpected token } in JSON at position 94
+/messages ||| InternalServerError ||| 1654436326572 ||| 500 ||| Unexpected token } in JSON at position 94
+/messages ||| InternalServerError ||| 1654436372000 ||| 500 ||| Cannot convert undefined or null to object
+/messages ||| InternalServerError ||| 1654442733178 ||| 500 ||| Cannot convert undefined or null to object
+/messages ||| InternalServerError ||| 1654446784695 ||| 500 ||| Cannot convert undefined or null to object
+/messages ||| InternalServerError ||| 1654447002321 ||| 500 ||| Cannot convert undefined or null to object
+/messages ||| InternalServerError ||| 1654447020446 ||| 500 ||| Cannot convert undefined or null to object
+/messages ||| InternalServerError ||| 1654537441222 ||| 500 ||| Cannot convert undefined or null to object
+/messages ||| InternalServerError ||| 1654537592227 ||| 500 ||| path is not defined
+/messages ||| InternalServerError ||| Mon Jun 06 2022 22:53:59 GMT+0500 (Uzbekistan Standard Time) ||| 500 ||| Cannot convert undefined or null to object
+/messages ||| InternalServerError ||| Mon Jun 06 2022 22:55:22 GMT+0500 (Uzbekistan Standard Time) ||| 500 ||| Cannot convert undefined or null to object
+/register ||| InternalServerError ||| Mon Jun 06 2022 23:15:20 GMT+0500 (Uzbekistan Standard Time) ||| 500 ||| Cannot read properties of undefined (reading 'name')
+/register ||| InternalServerError ||| Mon Jun 06 2022 23:16:02 GMT+0500 (Uzbekistan Standard Time) ||| 500 ||| Cannot read properties of null (reading 'avatar')

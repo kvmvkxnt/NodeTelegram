@@ -1,17 +1,56 @@
 [
-  {
-    "userId": 1,
-    "username": "ali",
-    "password": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f"
-  },
-  {
-    "userId": 2,
-    "username": "kama",
-    "password": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f"
-  },
-  {
-    "userId": 3,
-    "username": "someName",
-    "password": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f"
-  }
+    {
+        "username": "kvmvkxnt",
+        "password": "a460c4e1be8fbf5af94598579291800ff42626aa3c9af16b10d9747002ade59c",
+        "email": "kamron1007dada@gmail.com",
+        "userId": 1
+    },
+    {
+        "username": "some_username",
+        "email": "some-email@gmail.com",
+        "password": "e1b053f37332e63f255223cba309f1eceaf1f37a37e55f50a68ad85cb679e735",
+        "userId": 2,
+        "avatar": {
+            "viewLink": "http://localhost:3001/view/1654539260892ScreenShot2022-05-21at20.33.04.png",
+            "downloadLink": "http://localhost:3001/download/1654539260892ScreenShot2022-05-21at20.33.04.png"
+        }
+    },
+    {
+        "username": "another_one",
+        "email": "some-email@gmail.com",
+        "password": "e1b053f37332e63f255223cba309f1eceaf1f37a37e55f50a68ad85cb679e735",
+        "userId": 3
+    },
+    {
+        "username": "another_one1",
+        "email": "some-email@gmail.com",
+        "password": "e1b053f37332e63f255223cba309f1eceaf1f37a37e55f50a68ad85cb679e735",
+        "userId": 4,
+        "avatar": {
+            "viewLink": "http://localhost:3001/view/1654539351277ScreenShot2022-05-21at20.33.04.png",
+            "downloadLink": "http://localhost:3001/download/1654539351277ScreenShot2022-05-21at20.33.04.png"
+        }
+    },
+    {
+        "username": "another_one2",
+        "email": "some-email@gmail.com",
+        "password": "e1b053f37332e63f255223cba309f1eceaf1f37a37e55f50a68ad85cb679e735",
+        "userId": 5
+    },
+    {
+        "username": "another_one3",
+        "email": "some-email@gmail.com",
+        "password": "e1b053f37332e63f255223cba309f1eceaf1f37a37e55f50a68ad85cb679e735",
+        "userId": 6,
+        "avatar": {
+            "viewLink": "http://localhost:3001/view/1654539385805ScreenShot2022-05-21at20.33.04.png",
+            "downloadLink": "http://localhost:3001/download/1654539385805ScreenShot2022-05-21at20.33.04.png"
+        }
+    },
+    {
+        "username": "another_one4",
+        "email": "some-email@gmail.com",
+        "password": "e1b053f37332e63f255223cba309f1eceaf1f37a37e55f50a68ad85cb679e735",
+        "userId": 7
+    }
 ]

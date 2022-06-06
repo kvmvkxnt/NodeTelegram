@@ -2,11 +2,11 @@ import fs from 'fs';
 import path from 'path';
 
 function read(fileName) {
-  return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'db', fileName + '.json'), 'utf-8'));
+  return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'src', 'db', fileName + '.json'), 'utf-8'));
 }
 
 function write(fileName, data) {
-  fs.writeFileSync(path.join(process.cwd(), 'db', fileName + '.json'), JSON.stringify(data, null, 4));
+  fs.writeFileSync(path.join(process.cwd(), 'src', 'db', fileName + '.json'), JSON.stringify(data, null, 4));
   return true;
 }
 
