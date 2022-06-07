@@ -1,1 +1,22 @@
-[]
+[
+    {
+        "username": "admin",
+        "password": "41e5653fc7aeb894026d6bb7b2db7f65902b454945fa8fd65a6327047b5277fb",
+        "email": "admin@gmail.com",
+        "userId": 1,
+        "avatar": {
+            "viewLink": "http://localhost:3001/view/16546151331662022-03-0713.49.12.png",
+            "downloadLink": "http://localhost:3001/download/16546151331662022-03-0713.49.12.png"
+        }
+    },
+    {
+        "username": "kvmvkxnt",
+        "password": "77361456f47982f210558fce3e9b2a3baae535f989f347cab6e80483ba5f9cb0",
+        "email": "kamron1007dada@gmail.com",
+        "userId": 2,
+        "avatar": {
+            "viewLink": "http://localhost:3001/view/1654625995459biology-tickets-10.png",
+            "downloadLink": "http://localhost:3001/download/1654625995459biology-tickets-10.png"
+        }
+    }
+]

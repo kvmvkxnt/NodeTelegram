@@ -18,6 +18,7 @@ const GET = (_, res, next) => {
       return message;
     });
 
+    res.setHeader('Access-Control-Allow-Origin', '*');
     res.status(200).send(messages);
 
   } catch (e) { 
@@ -32,8 +33,9 @@ const SEND = (req, res, next) => {
     
     if (req.files) {
       let fileName = Date.now() + req.files.file.name.replace(/\s/g, '');
-      req.files.file.mv(path.join(process.cwd(), 'src', 'uploads', 'files', fileName));
+      req.files.file.mv(path.join(process.cwd(), 'src', 'uploads', fileName));
       req.body.file = {
+        "name": req.files.file.name,
         "viewLink": `${HOST}:${PORT}/view/${fileName}`,
         "downloadLink": `${HOST}:${PORT}/download/${fileName}`
       };
@@ -41,13 +43,15 @@ const SEND = (req, res, next) => {
 
     req.body.userId = req.userId;
     req.body.messageId = messages.length ? messages.at(-1).messageId + 1 : 1;
-  
+    req.body.time = Date.now();
+
     messages.push(req.body);
     write('messages', messages);
 
     req.body.user = users.find(user => user.userId == req.userId);
     delete req.body.user.password;
     
+    res.setHeader('Access-Control-Allow-Origin', '*');
     res.status(201).json({
       status: 201,
       message: 'ok',

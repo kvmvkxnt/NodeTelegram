@@ -7,19 +7,11 @@ import path from 'path';
 const HOST = 'http://localhost';
 const PORT = 3001;
 
-const GET = (req, res, next) => {
+const GET = (_, res, next) => {
   try {
-    let { userId } = req.params;
-
-    if (userId) {
-      let [ user ] = read('users').filter(user => user.userId == userId);
-      delete user.password;
-      return res.status(200).send(user);
-    }
-
     let users = read('users').filter(user => delete user.password);
+    res.setHeader('Access-Control-Allow-Origin', '*');
     res.status(200).send(users);
-
   } catch (e) {
     return next( new InternalServerError(500, e.message) );
   }
@@ -38,6 +30,7 @@ const LOGIN = (req, res, next) => {
 
     delete user.password;
 
+    res.setHeader('Access-Control-Allow-Origin', '*');
     res.status(200).json({
       status: 200,
       message: 'ok',
@@ -51,6 +44,7 @@ const LOGIN = (req, res, next) => {
 
 const REGISTER = (req, res, next) => {
   try {
+    res.setHeader('Access-Control-Allow-Origin', '*')
     let users = read('users');
 
     req.body.userId = users.length ? users.at(-1).userId + 1 : 1;
@@ -64,7 +58,7 @@ const REGISTER = (req, res, next) => {
 
     if (req.files) {
       let fileName = Date.now() + req.files.avatar.name.replace(/\s/g, '');
-      req.files.avatar.mv(path.join(process.cwd(), 'src', 'uploads', 'avatars', fileName));
+      req.files.avatar.mv(path.join(process.cwd(), 'src', 'uploads', fileName));
 
       req.body.avatar = {
         "viewLink": `${HOST}:${PORT}/view/${fileName}`,
@@ -84,6 +78,7 @@ const REGISTER = (req, res, next) => {
 
     delete req.body.password;
 
+    res.setHeader('Access-Control-Allow-Origin', '*');
     res.status(201).json({
       status: 201,
       message: 'ok',

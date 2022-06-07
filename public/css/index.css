@@ -189,8 +189,13 @@ input[type="file"] {
     opacity: 0.7;
     font-weight: 500;
 }
+
 .msg-from > img {
     margin-left: auto;
+}
+
+.msg-from .msg-text {
+  background-color: lightgreen;
 }
 
 .profile-side {
