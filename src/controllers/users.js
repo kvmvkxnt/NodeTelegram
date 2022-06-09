@@ -4,7 +4,7 @@ import sha256 from 'sha256';
 import jwt from '../utils/jwt.js';
 import path from 'path';
 
-const HOST = process.env.HOST || 'http://localhost';
+const HOST = process.env.HEROKU_APP_NAME ? process.env.HEROKU_APP_NAME + '.heroku.com' : 'http://localhost';
 const PORT = process.env.PORT || 3001;
 
 const GET = (_, res, next) => {

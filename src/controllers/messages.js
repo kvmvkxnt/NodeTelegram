@@ -2,7 +2,7 @@ import { read, write } from '../utils/model.js';
 import { InternalServerError } from '../utils/errors.js';
 import path from 'path';
 
-const HOST = process.env.HOST || 'http://localhost';
+const HOST = process.env.HEROKU_APP_NAME ? process.env.HEROKU_APP_NAME + '.heroku.com' : 'http://localhost';
 const PORT = process.env.PORT || 3001;
 
 const GET = (_, res, next) => {
