@@ -4,7 +4,7 @@ import sha256 from 'sha256';
 import jwt from '../utils/jwt.js';
 import path from 'path';
 
-const HOST = process.env.DATABASE_URL || 'http://localhost';
+const HOST = process.env.HOST || 'http://localhost';
 const PORT = process.env.PORT || 3001;
 
 const GET = (_, res, next) => {

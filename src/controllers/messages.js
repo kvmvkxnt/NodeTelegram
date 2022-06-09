@@ -2,7 +2,7 @@ import { read, write } from '../utils/model.js';
 import { InternalServerError } from '../utils/errors.js';
 import path from 'path';
 
-const HOST = process.env.DATABASE_URL || 'http://localhost';
+const HOST = process.env.HOST || 'http://localhost';
 const PORT = process.env.PORT || 3001;
 
 const GET = (_, res, next) => {
