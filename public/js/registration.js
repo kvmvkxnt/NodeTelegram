@@ -31,7 +31,7 @@ form.addEventListener('submit', async (evt) => {
     formData.append("avatar", avatar);
   };
 
-  const response = await fetch('http://127.0.0.1:3001/register', {
+  const response = await fetch('https://telegram-by-kvmvkxnt.herokuapp.com/register', {
     method: "POST",
     body: formData
   });

@@ -22,7 +22,7 @@ form.addEventListener('submit', async (evt) => {
   formData.append("username", username);
   formData.append("password", password);
 
-  const response = await fetch('http://127.0.0.1:3001/login', {
+  const response = await fetch('https://telegram-by-kvmvkxnt.herokuapp.com/login', {
     method: "POST",
     body: formData
   });
